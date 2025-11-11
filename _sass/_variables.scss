@@ -1,3 +1,4 @@
+@use "sass:color";
 /* variables */
 
 /* type scale */
@@ -15,10 +16,10 @@ $type-size-10               : 0.5em !default;    // ~8px
 /* Colors */
 $highlight-color            : #ff6600;
 $gray                       : #5B5B66;
-$dark-gray                  : mix(#000, $gray, 40%);
-$darker-gray                : mix(#000, $gray, 60%);
-$light-gray                 : mix(#fff, $gray, 50%);
-$lighter-gray               : mix(#fff, $gray, 90%);
+$dark-gray                  : color.mix(#000, $gray, 40%);
+$darker-gray                : color.mix(#000, $gray, 60%);
+$light-gray                 : color.mix(#fff, $gray, 50%);
+$lighter-gray               : color.mix(#fff, $gray, 90%);
 
 $link-color                 : $gray;
 $link-color-hover           : $highlight-color;

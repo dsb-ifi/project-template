@@ -1,3 +1,5 @@
+@use "variables" as vars;
+
 body {
   font-family: 'Noto Sans', sans-serif;
 }
@@ -8,7 +10,7 @@ body {
 }
 
 .link-block .button:hover  {
-  background-color: $highlight-color;
+  background-color: vars.$highlight-color;
 }
 
 .dnerf {
@@ -50,13 +52,13 @@ body {
 }
 
 .publication-venue {
-    color: $light-gray;
+    color: vars.$light-gray;
     width: fit-content;
     font-weight: bold;
 }
 
 .publication-awards {
-    color: $highlight-color;
+    color: vars.$highlight-color;
     width: fit-content;
     font-weight: bolder;
 }
@@ -65,7 +67,7 @@ body {
 }
 
 .publication-authors a {
-   color: $gray !important;
+   color: vars.$gray !important;
 }
 
 .publication-authors a:hover {
@@ -78,18 +80,18 @@ body {
   margin-right: .25em;
 
   & sup {
-    font-size: $type-size-8;
+    font-size: vars.$type-size-8;
   }
 }
 
 .affiliations-block {
   display: inline-block;
-  font-size: $type-size-6;
+  font-size: vars.$type-size-6;
   margin-left: .25em;
   margin-right: .25em;
 
   & sup {
-    font-size: $type-size-6;
+    font-size: vars.$type-size-6;
   }
 }
 
@@ -101,7 +103,7 @@ body {
 }
   
 .publication-authors a:hover {
-  color: $highlight-color !important;
+  color: vars.$highlight-color !important;
 }
 
 .publication-video {
@@ -132,7 +134,7 @@ body {
 .results-carousel .item {
   margin: 5px;
   overflow: hidden;
-  border: 1px solid $lighter-gray;
+  border: 1px solid vars.$lighter-gray;
   border-radius: 10px;
   padding: 0;
   font-size: 0;
@@ -144,7 +146,7 @@ body {
 
 
 .interpolation-panel {
-  background: $lighter-gray;
+  background: vars.$lighter-gray;
   border-radius: 10px;
 }
 

@@ -1,6 +1,8 @@
+@use "variables" as vars;
+
 .footer {
-  font-size: $type-size-6;
-  color: $gray;
+  font-size: vars.$type-size-6;
+  color: vars.$gray;
   
   #smiley {
     font-weight: bold;
@@ -26,14 +28,14 @@
 }
 
 .footer a {
-  font-size: $type-size-5;
-  color: $gray;
+  font-size: vars.$type-size-5;
+  color: vars.$gray;
   &:hover {
-    color: $highlight-color;
+    color: vars.$highlight-color;
   }
 }
 
 .footer .icon-link {
-    font-size: $type-size-5;
-    color: $gray;
+    font-size: vars.$type-size-5;
+    color: vars.$gray;
 }
