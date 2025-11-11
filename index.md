@@ -53,7 +53,7 @@ Turing's main objective in this paper was to investigate the notion of computabi
 5. Turing showed that the Entscheidungsproblem is undecidable, meaning there is no algorithm that can determine, for any given mathematical statement, whether it is provable or not.
 
 <!-- You can place the images in the default folder (defined in the template at /assets/images/ in _config.yml) by appending the path to the image names (site.image_base_path), or you can place them in the same directory as index.md and simply name them. -->
-![Turing Machine]({{ site.image_base_path }}Turing_machine.png)
+![Turing Machine]({{ site.image_base_path | append: "Turing_machine.png" | absolute_url }})
 
 *Figure 1: A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).*
 
