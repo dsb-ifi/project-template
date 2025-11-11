@@ -35,7 +35,7 @@ jobs:
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
       
       - name: Build with Jekyll
-        run: JEKYLL_ENV=production bundle exec jekyll build
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
