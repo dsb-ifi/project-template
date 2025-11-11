@@ -27,13 +27,21 @@ jobs:
     steps:
       - name: Checkout project-template
         uses: actions/checkout@v4
+
+      - name: Prepare Ruby and Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Install ruby dependencies
+        run: bundle install
+        
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      
       - name: Build with Jekyll
-        uses: actions/jekyll-build-pages@v1
-        with:
-          source: ./
-          destination: ./_site
+        run: bundle exec jekyll build
+        
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
