@@ -31,17 +31,15 @@ jobs:
       - name: Prepare Ruby and Jekyll
         uses: ruby/setup-ruby@v1
         with:
-          bundler-cache: true
-
-      - name: Install ruby dependencies
-        run: bundle install
+          ruby-version: '3.4'
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
         
       - name: Setup Pages
         uses: actions/configure-pages@v5
       
       - name: Build with Jekyll
         run: bundle exec jekyll build
-        
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 
