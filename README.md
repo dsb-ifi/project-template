@@ -16,7 +16,15 @@ in this directory.
 
 Then you can see the website at `http://127.0.0.1:4000`.
 
-## To use it
+## Create a new repository using this template
+
+- Go to the [project-template](https://github.com/dsb-ifi/project-template) repository landing page
+- Use teh "Use this template" drop down and select "Create new repository"
+- Select "Include all branches", since you need the `gh-pages` branch.
+- Fill the repository name and other options
+- Select "Create repository"
+
+## To use it on an existing repo
 
 - You need to copy from the `gh-pages` branch the `index.md` and workflow (`jekyll-build.yml`) files into your repository, and update the [index.md](/index.md).  For instance
   ```bash
