@@ -54,10 +54,18 @@ Turing's main objective in this paper was to investigate the notion of computabi
 4. He proved the existence of non-computable numbers, which cannot be computed by any Turing machine.
 5. Turing showed that the Entscheidungsproblem is undecidable, meaning there is no algorithm that can determine, for any given mathematical statement, whether it is provable or not.
 
-<!-- You can place the images in the default folder (defined in the template at /assets/images/ in _config.yml) by appending the path to the image names (site.image_base_path), or you can place them in the same directory as index.md and simply name them. -->
-![Turing Machine]({{ site.image_base_path | append: "Turing_machine.png" | absolute_url }})
 
-*Figure 1: A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).*
+<!-- You can place the images in the default folder (defined in the template at /assets/images/ in _config.yml) by appending the path to the image names (site.image_base_path), or you can place them in the same directory as index.md and simply name them. -->
+![Turing Machine]({{ site.image_base_path | append: "Turing_machine.png" | absolute_url }}) 
+
+{: .figure-caption}
+<!-- you can use the figure-caption class to use the same css class as the template below.  Note the space above to trigger a new paragraph when compiled. -->
+**Figure 1:** A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).
+
+The same behavior can be achieved by a template if you want to.  See the example below.
+
+<!-- the images are loading automatically from the assets/image folder -->
+{% include img.html src='Turing_machine.png' alt='Image from include' caption='**Figure 2:** A representation of a Turing Machine. Source: [Wiki](https://en.wikipedia.org/wiki/Turing_machine).' %}
 
 ## Table: Comparison of Computable and Non-Computable Numbers
 
