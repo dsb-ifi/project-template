@@ -23,6 +23,9 @@ Then you can see the website at `http://127.0.0.1:4000`.
 - Select "Include all branches", since you need the `gh-pages` branch.
 - Fill the repository name and other options
 - Select "Create repository"
+- :warning: Since this template depends on Jekyll 4+, the "pages" setting must be updated to use the actions instead of the traditional deployment from branch.  Thus, in your created repository,
+  - Go to Settings > Pages.
+  - Select "GitHub Actions" as the source.
 
 ## To use it on an existing repo
 
