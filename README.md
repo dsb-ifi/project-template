@@ -39,11 +39,15 @@ Then you can see the website at `http://127.0.0.1:4000`.
   # get the branch from the templates
   git fetch template gh-pages
   # checkout the files you need
-  git checkout template/gh-pages -- index.md .github/workflows/jekyll-build.yml
+  git switch -c gh-pages --track template/gh-pages
+  git rm assets/images/*.jpg assets/images/Turing_machine.png
+  git commit assets/images/*.jpg assets/images/Turing_machine.png -m "Deleting default images from template"
 
   # add the files to your local branch and commit
-  git add index.md .github/workflows/jekyll-build.yml
-  git commit index.md .github/workflows/jekyll-build.yml -m "Add template files"
+  git add assets/images/your-image.png
+  # update index.md with your changes
+  # commit your changes
+  git commit index.md assets/images/your-image.png -m "Website hello world"
   
   # remove the remote
   git remote rm template
